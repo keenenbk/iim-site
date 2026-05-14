@@ -2,56 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/container";
 import { ResourcesNewsletterBand } from "@/components/resources-newsletter-band";
+import { posts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Resources",
   description:
     "Articles, references, and knowledge for marketing leaders, researchers, and measurement practitioners.",
 };
-
-type Category = "CASE STUDY" | "BLOG";
-
-const posts: {
-  category: Category;
-  title: string;
-  dateLabel: string;
-  dateIso: string;
-}[] = [
-  {
-    category: "CASE STUDY",
-    title:
-      "Case Study: How a Gaming Brand Replaced Attribution with Integrated Impact Modeling (IIM) to Unlock Growth",
-    dateLabel: "Nov 2, 2024",
-    dateIso: "2024-11-02",
-  },
-  {
-    category: "BLOG",
-    title:
-      "From Awareness to Activation: A Real-World Application of Integrated Impact Modeling in Wholesale Distribution",
-    dateLabel: "Jun 1, 2024",
-    dateIso: "2024-06-01",
-  },
-  {
-    category: "BLOG",
-    title:
-      "What Marketing Can Learn from Climate Science: Rethinking Measurement with Integrated Impact Modeling",
-    dateLabel: "Apr 6, 2024",
-    dateIso: "2024-04-06",
-  },
-  {
-    category: "BLOG",
-    title:
-      "Transitioning from Traditional Metrics to Integrated Impact Modeling: A Strategic Guide for Digital Marketers",
-    dateLabel: "Mar 2, 2023",
-    dateIso: "2023-03-02",
-  },
-  {
-    category: "BLOG",
-    title: "Together, Building a New Era of Marketing Measurement",
-    dateLabel: "Feb 1, 2023",
-    dateIso: "2023-02-01",
-  },
-];
 
 function PostCard({
   post,
@@ -62,7 +19,7 @@ function PostCard({
 }) {
   return (
     <Link
-      href="#"
+      href={`/blog/${post.slug}`}
       className={`group flex h-full flex-col rounded-lg bg-background p-7 shadow-sm transition-[box-shadow,transform] hover:-translate-y-0.5 hover:shadow-md sm:p-9 ${
         featured ? "min-h-[260px] lg:min-h-[320px]" : ""
       }`}
@@ -85,7 +42,7 @@ function PostCard({
           className="text-sm font-semibold tabular-nums text-body"
           dateTime={post.dateIso}
         >
-          {post.dateLabel}
+          {post.date}
         </time>
         <span
           className="text-xl font-light text-navy opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100"
