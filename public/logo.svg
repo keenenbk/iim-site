@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" fill="none" role="img" aria-label="Integrated Impact Modeling">
+  <text
+    x="4"
+    y="40.5"
+    fill="#0f1f3d"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="38"
+    font-weight="700"
+    letter-spacing="-0.065em"
+  >IIM</text>
+  <line
+    x1="69.5"
+    y1="11"
+    x2="69.5"
+    y2="49"
+    stroke="#0f1f3d"
+    stroke-width="1"
+  />
+  <text
+    fill="#0f1f3d"
+    font-family="ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif"
+    font-size="11.25"
+    font-weight="300"
+    letter-spacing="0.02em"
+  >
+    <tspan x="78" y="28.5">Integrated Impact</tspan>
+    <tspan x="78" y="45.5">Modeling</tspan>
+  </text>
+</svg>
