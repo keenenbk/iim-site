@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { SubscribeNewsletterForm } from "@/components/subscribe-newsletter-form";
 
 export const metadata: Metadata = {
   title: "Home",
@@ -217,20 +218,18 @@ export default function HomePage() {
                 measurement, campaign analysis, and the science of smarter
                 marketing.
               </p>
-              <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center">
+              <div className="mt-10 flex max-w-xl flex-col gap-4">
+                <SubscribeNewsletterForm
+                  variant="creamOnCream"
+                  inputId="home-nl-email"
+                  submitLabel="Subscribe Free"
+                  formClassName="max-w-xl"
+                />
                 <Link
                   href={BEEHIIV}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex min-h-14 items-center justify-center rounded-lg bg-navy px-10 py-4 text-center text-base font-bold text-white shadow-sm transition-[transform,box-shadow] hover:bg-[#0c192f] hover:shadow-md active:scale-[0.99]"
-                >
-                  Subscribe Free
-                </Link>
-                <Link
-                  href={BEEHIIV}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-center text-base font-bold text-navy underline decoration-navy/25 underline-offset-[6px] transition-colors hover:decoration-navy sm:text-left"
+                  className="text-base font-bold text-navy underline decoration-navy/25 underline-offset-[6px] transition-colors hover:decoration-navy"
                 >
                   Read past issues →
                 </Link>

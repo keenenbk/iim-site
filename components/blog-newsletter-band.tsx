@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Container } from "@/components/container";
+import { SubscribeNewsletterForm } from "@/components/subscribe-newsletter-form";
 
 const BEEHIIV = "https://integratedimpactmarketing.beehiiv.com/";
 
@@ -15,14 +16,22 @@ export function BlogNewsletterBand() {
             Join thousands of marketers following weekly analysis on measurement,
             campaigns, and the science of impact.
           </p>
-          <Link
-            href={BEEHIIV}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex min-h-12 items-center justify-center rounded-lg bg-white px-8 py-3 text-base font-bold text-navy shadow-sm transition-[transform,box-shadow] hover:shadow-md active:scale-[0.99]"
-          >
-            Subscribe on Beehiiv
-          </Link>
+          <div className="mt-8 flex justify-center">
+            <SubscribeNewsletterForm
+              variant="blogNavy"
+              inputId="blog-nl-email"
+            />
+          </div>
+          <p className="mt-6">
+            <Link
+              href={BEEHIIV}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm font-semibold text-slate-200 underline decoration-white/30 underline-offset-4 transition-colors hover:text-white hover:decoration-white"
+            >
+              Browse past issues on Beehiiv →
+            </Link>
+          </p>
         </div>
       </Container>
     </section>
