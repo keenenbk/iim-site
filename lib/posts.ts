@@ -9,6 +9,92 @@ export type BlogPost = {
 
 export const posts: BlogPost[] = [
   {
+    slug: "mmm-actionability-gap",
+    title:
+      "From Rear-View Mirror to Dynamic GPS: Bridging the Marketing Mix Modeling Actionability Gap",
+    date: "May 28, 2026",
+    dateIso: "2026-05-28",
+    category: "BLOG",
+    content: `
+## From Rear-View Mirror to Dynamic GPS: Bridging the Marketing Mix Modeling Actionability Gap
+
+In today's economic climate, marketing teams are facing an unprecedented ultimatum: **prove the business impact of every single dollar spent, or watch budgets shrink.** With U.S. marketing spend reaching a staggering $550 billion, marketing is no longer just a creative engine - it is treated like an investment portfolio.
+
+To navigate this high-pressure landscape, organizations are undergoing a massive resurgence in **Marketing Mix Modeling (MMM)**. Because MMM relies on privacy-friendly, aggregated data rather than tracking individual user clicks, it has become the ultimate tool for a cookie-less world.
+
+In fact, a recent report by **Harvard Business Review Analytic Services**, sponsored by Google, revealed that **87% of respondents** say it is crucial for their organization to use MMM to gain data-driven insights.
+
+But there is a glaring catch. While everyone wants the insights, very few know what to do with them. Welcome to the **Actionability Gap**.
+
+## The Actionability Gap by the Numbers
+
+The HBR Analytic Services report highlights a stark disconnect between data collection and strategic execution. While organizations are desperate to measure ROI, their internal structures are lagging behind.
+
+- **68%** of organizations use MMM primarily because of an increased focus on marketing ROI.
+- **73%** feel increasing pressure to demonstrate the business impact of their media channels.
+- Yet, **only 28%** say their organization is "very effective" at converting MMM insights into timely, impactful action.
+
+The research categorized organizations into three groups based on their ability to turn insights into outcomes: **Leaders** (22%), **Followers** (36%), and **Laggards** (42%).
+
+The cost of sitting in the laggard category is high. Leaders outpace Laggards across every major metric:
+
+- **Enhanced Data-Driven Decision Making:** 61% (Leaders) vs 29% (Laggards)
+- **Improved Sales and Conversions:** 54% (Leaders) vs 31% (Laggards)
+- **More Effective Mix of Media Channels:** 51% (Leaders) vs 37% (Laggards)
+
+## What's Stalling the Engine? Tech, Ops, and Organizational Roadblocks
+
+If MMM is such a trusted compass, why are so many companies struggling to steer the ship? The report points out that the actionability gap is not just a technical problem - it is an operational and cultural one.
+
+### 1. The Technology Swamp
+
+To work effectively, MMM needs to be fed massive amounts of clean, integrated data. However, **47%** of marketers cite data quality issues as a primary barrier, and **46%** struggle to integrate siloed data from multiple internal and external sources.
+
+### 2. Operational Inertia
+
+Marketing campaigns - especially traditional ones like TV ads - require massive lead times. Because of this, **46%** of respondents note that slow internal processes delay their ability to implement data-driven changes, while **40%** struggle to adjust active campaigns to match MMM recommendations.
+
+### 3. The Collaboration Void
+
+Analytics teams often live on a different floor (or in an entirely different matrix) than executive decision-makers. **41%** of organizations suffer from siloed teams that prevent the sharing of MMM insights across departments, leading to a profound lack of trust and alignment.
+
+## The Playbook: 3 Principles to Modernize Your MMM
+
+To turn your MMM from a static, end-of-quarter report card into a dynamic GPS that guides your next business decision, organizations must adopt three core principles outlined by industry experts and the HBR report:
+
+### Principle 1: Democratize the Science
+
+A data-driven culture cannot thrive when data scientists speak a language that marketing leaders do not understand. Organizations need to foster transparent methods to build universal trust in the data.
+
+Jewelry giant Pandora successfully bridged this gap by restructuring. They moved away from having their global paid media team own the data, instead creating a centralized **marketing effectiveness function** that combines analytics and execution. This gives the entire enterprise a single, holistic view of performance.
+
+### Principle 2: Automate the Complexity
+
+Agility requires speed. Marketers should not be wasting months cleaning databases manually. By leveraging machine learning and AI, companies can automate data preparation and transform model outputs into real-world budget simulation scenarios. This frees up human talent to focus on what they do best: strategy and brand growth.
+
+### Principle 3: Unify the Measurement View
+
+There is no single perfect measurement tool. The secret lies in creating an ecosystem where MMM sets the strategic guardrails, while other tools refine the details.
+
+> "MMM is part of a larger measurement ecosystem that sets strategic guardrails while all other lenses, like attribution and experimentation, help validate and refine decisions in real time. Incrementality is the referee. If results do not agree, we do not debate opinions. We run the next best test and let causality decide."
+> -- *Shamsa Jafri, Head of Analytics at Hearts & Science*
+
+To build a durable source of truth, companies should triangulate three distinct lenses:
+
+- **MMM:** For top-down, holistic budget allocation across channels.
+- **Attribution:** For granular, week-to-week tactical tuning of specific creatives or campaigns.
+- **Incrementality Testing:** Using controlled experiments (A/B testing) to validate the causal lift of marketing decisions.
+
+## The Leadership Imperative
+
+Modernizing your marketing mix modeling is not a project you can simply hand off to your IT department. It requires leadership to step in, break down departmental silos, and champion a culture of continuous experimentation.
+
+The rewards are clear. Organizations that bridge the actionability gap stop looking at marketing as an unavoidable expense and start leveraging it as an accountable, fast-moving growth engine. It is time to take your data out of the rear-view mirror and put it where it belongs: firmly in the driver's seat.
+
+Source: [Bridging the Marketing Mix Modeling Actionability Gap](https://hbr.org/sponsored/2026/03/bridging-the-marketing-mix-modeling-actionability-gap)
+`,
+  },
+  {
     slug: "gaming-brand-case-study",
     title:
       "Case Study: How a Gaming Brand Replaced Attribution with Integrated Impact Modeling (IIM) to Unlock Growth",
