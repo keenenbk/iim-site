@@ -1,3 +1,5 @@
+import { attributionMmmPost } from "./attribution-mmm-post";
+
 export type BlogPost = {
   slug: string;
   title: string;
@@ -5,9 +7,13 @@ export type BlogPost = {
   dateIso: string;
   category: "CASE STUDY" | "BLOG";
   content: string;
+  metaTitle?: string;
+  description?: string;
+  excerpt?: string;
 };
 
 export const posts: BlogPost[] = [
+  attributionMmmPost,
   {
     slug: "mmm-actionability-gap",
     title:
