@@ -4,7 +4,7 @@ import { posts } from "@/lib/posts";
 const BASE = "https://www.integratedimpactmodeling.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPaths = ["", "/methodology", "/in-practice", "/resources"];
+  const staticPaths = ["", "/methodology", "/in-practice", "/resources", "/privacy"];
 
   const staticEntries: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${BASE}${path}`,
