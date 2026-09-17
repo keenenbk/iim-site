@@ -15,6 +15,101 @@ export type BlogPost = {
 export const posts: BlogPost[] = [
   attributionMmmPost,
   {
+    slug: "chatgpt-ads-attribution",
+    title:
+      "ChatGPT Ads Have No Attribution. Here's How to Measure Them Anyway",
+    date: "June 3, 2026",
+    dateIso: "2026-06-03",
+    category: "BLOG",
+    content: `
+ChatGPT started selling ads in January 2026. By May it had opened self-serve buying to everyone. By June it was projecting $2.5 billion in ad revenue for the year.
+
+And yet most advertisers running on the platform right now have no idea if it is actually working.
+
+That is not a minor technical inconvenience. It is a fundamental measurement problem. One that exposes a much bigger issue with how marketers have been trained to think about attribution.
+
+## What makes ChatGPT ads different from everything else
+
+When you run ads on Google or Meta, you get a lot of data back. Click paths, conversion events, audience signals, device fingerprints. The measurement infrastructure is mature and deep, even if it has gaps.
+
+ChatGPT is the opposite. Advertisers get impressions and clicks. That is essentially it. No user emails. No IP addresses. No location data. No behavioral profiles. Targeting is contextual, based on what the user is currently talking about and their past chat history.
+
+A user might see your ad on Monday, come back to the conversation on Wednesday, and convert through a completely different channel on Friday. Standard attribution models will give that conversion to whatever touchpoint fired last. ChatGPT gets nothing.
+
+This is not a bug OpenAI forgot to fix. It is a reflection of the privacy architecture the platform was built on. It is also not going away.
+
+## Why your current measurement stack cannot handle this
+
+Most digital advertising measurement was designed around a simple idea: track the click, fire the pixel, assign the conversion.
+
+That model already had cracks in it before ChatGPT arrived. iOS privacy changes, cookie deprecation, and the rise of dark social had been eroding click-based attribution for years. ChatGPT ads simply make the problem impossible to ignore.
+
+The specific issue is what researchers call the conversation gap. A user discovers your product inside an AI conversation. They ask follow-up questions. They compare you to competitors. They build intent. Then they close the tab and come back later through a search, a direct visit, or a referral that looks completely organic.
+
+At no point in that journey did a pixel fire in a way that connects their ChatGPT exposure to their eventual conversion. Last-click attribution treats this as if ChatGPT never existed.
+
+## What actually works for measuring ChatGPT ad performance
+
+There is no perfect solution here. Anyone telling you otherwise is selling something. But there are measurement approaches that work, and they all have one thing in common: they do not rely on tracking individual user journeys.
+
+**Media Mix Modeling**
+
+MMM works by looking at the relationship between ad spend across all channels and business outcomes over time. It does not need cookies or pixels. It does not track individuals. It asks: when we spent more in channel X, what happened to outcomes? When we pulled back, what changed?
+
+This is exactly the kind of question that works for ChatGPT ads. You run spend, you observe what happens to branded search volume, direct traffic, and conversions. You build a model that isolates the contribution. It is not instant and it is not precise at the individual level, but it tells you something real about whether the channel is driving business outcomes.
+
+**Incrementality testing**
+
+Incrementality testing, particularly geo-based lift studies, introduces controlled experiments into the measurement stack. You run ads in some markets and hold them back in others. You compare outcomes. The difference is your lift.
+
+This approach builds genuine confidence because it establishes cause and effect rather than correlation. It is slower and more expensive than pixel tracking, but it produces answers that hold up under scrutiny.
+
+**Branded search as a proxy signal**
+
+One of the most reliable indirect signals for ChatGPT ad exposure is branded search volume. When users encounter your brand in a ChatGPT conversation, many of them go to Google and search for you directly. Monitoring branded search trends against ChatGPT spend gives you a fast, practical signal that something is working, even when the direct attribution chain is broken.
+
+**UTM parameters for what you can capture**
+
+When a ChatGPT ad does result in a click through to your site, UTM parameters can capture that session. Tagging your ChatGPT campaigns carefully and tracking assisted conversions in GA4 using data-driven attribution (rather than last-click) will reveal that ChatGPT contributes more than the last-click model suggests. It will not capture everything. But it captures something.
+
+## Why this is actually an argument for IIM
+
+The measurement problem with ChatGPT ads is a specific instance of a broader truth about modern marketing.
+
+Individual channel attribution has always been a simplification. It works reasonably well when channels are siloed, users behave predictably, and tracking is intact. None of those conditions reliably hold in 2026.
+
+What Integrated Impact Modeling does differently is treat marketing as an ecosystem rather than a collection of independent channels. It borrows from the methodology used in climate impact modeling, where outcomes emerge from complex interactions between many variables, none of which can be fully understood in isolation.
+
+Applied to advertising measurement, this means asking different questions. Not just "did this ad convert?" but "how does activity in this channel change behavior across the full system?" Not "what was the ROI of this campaign?" but "what combination of channels and timing produces compounding returns over time?"
+
+ChatGPT ads are a useful stress test for this approach. Because you cannot lean on pixel data, you are forced to think about measurement the right way from the start.
+
+## What to do before you run ChatGPT ads
+
+The worst time to design your measurement approach is after a campaign has already launched.
+
+Before you spend anything on ChatGPT ads, do three things.
+
+First, establish baselines. Know what your branded search volume, direct traffic, and conversion rates look like before the campaign starts. You cannot measure lift without a baseline.
+
+Second, set up UTM tracking carefully. Tag every ChatGPT campaign so that the traffic you can capture is captured cleanly. Make sure your GA4 property is set to data-driven attribution, not last-click.
+
+Third, define what "working" means before you spend. Is it branded search lift? Assisted conversions? A geo-lift test showing incremental revenue? Pick a method and commit to it. If you wait until the end of the campaign to decide how you will measure it, you will not have the data you need.
+
+## The broader lesson
+
+ChatGPT ads are new. The measurement infrastructure around them is still developing. OpenAI has shipped a measurement pixel and a Conversions API, and more capabilities are expected later in 2026.
+
+But the underlying challenge is not going to be solved by better platform tooling alone. The conversation gap is structural. AI-mediated discovery does not fit neatly into click-based attribution models, and it never will.
+
+Marketers who are building measurement capabilities now, before the channel matures, will have a genuine advantage. Not because they will have the best tracking, but because they will have learned to think about measurement in a way that does not depend on perfect tracking.
+
+That is a skill that will apply to whatever comes after ChatGPT too.
+
+*Integrated Impact Modeling applies ecosystem-level measurement methodology to modern marketing challenges. If you want to understand how IIM approaches attribution in a world where individual tracking is increasingly unreliable, start with the [IIM Methodology](/methodology).*
+`,
+  },
+  {
     slug: "mmm-actionability-gap",
     title:
       "From Rear-View Mirror to Dynamic GPS: Bridging the Marketing Mix Modeling Actionability Gap",
