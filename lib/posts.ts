@@ -18,6 +18,9 @@ export const posts: BlogPost[] = [
     slug: "mmm-actionability-gap",
     title:
       "From Rear-View Mirror to Dynamic GPS: Bridging the Marketing Mix Modeling Actionability Gap",
+    metaTitle: "MMM Actionability Gap",
+    description:
+      "Most marketing teams use mix modeling to prove ROI, but few can act on the results in time. Learn what the MMM actionability gap is and how leaders close it.",
     date: "May 28, 2026",
     dateIso: "2026-05-28",
     category: "BLOG",
@@ -104,6 +107,9 @@ Source: [Bridging the Marketing Mix Modeling Actionability Gap](https://hbr.org/
     slug: "gaming-brand-case-study",
     title:
       "Case Study: How a Gaming Brand Replaced Attribution with Integrated Impact Modeling (IIM) to Unlock Growth",
+    metaTitle: "Gaming Brand IIM Study",
+    description:
+      "A gaming brand replaced failing attribution with Integrated Impact Modeling, cut performance media costs 30 percent, and grew monthly users from 45,000 to 75,000.",
     date: "November 2, 2024",
     dateIso: "2024-11-02",
     category: "CASE STUDY",
@@ -145,9 +151,12 @@ This gaming company's story is a lesson in strategic leadership. IIM gave the te
 `,
   },
   {
-    slug: "wholesale-distribution-case-study",
+    slug: "wholesale-distribution",
     title:
       "From Awareness to Activation: A Real-World Application of Integrated Impact Modeling in Wholesale Distribution",
+    metaTitle: "Wholesale Distribution IIM",
+    description:
+      "How a wholesale manufacturer used Integrated Impact Modeling to measure demand without POS data, cutting spend 27 percent while lifting engagement and inquiries.",
     date: "June 1, 2024",
     dateIso: "2024-06-01",
     category: "CASE STUDY",
@@ -200,6 +209,9 @@ Integrated Impact Modeling represents a new standard for evaluating influence an
     slug: "climate-science-marketing",
     title:
       "What Marketing Can Learn from Climate Science: Rethinking Measurement with Integrated Impact Modeling",
+    metaTitle: "Climate Science Marketing",
+    description:
+      "Attribution and media mix models struggle in complex systems. See what marketing can learn from climate science and how Integrated Impact Modeling measures impact.",
     date: "April 6, 2024",
     dateIso: "2024-04-06",
     category: "BLOG",
@@ -253,6 +265,9 @@ In complex systems, the question is not "who clicked the ad?" It is "did we shif
     slug: "transitioning-to-iim",
     title:
       "Transitioning from Traditional Metrics to Integrated Impact Modeling: A Strategic Guide for Digital Marketers",
+    metaTitle: "Transitioning to IIM",
+    description:
+      "A ten-step guide for digital marketers moving from clicks and vanity metrics to Integrated Impact Modeling and real-world demand signals.",
     date: "March 2, 2023",
     dateIso: "2023-03-02",
     category: "BLOG",
@@ -308,6 +323,9 @@ Digital marketing is no longer about simply reaching audiences — it is about i
   {
     slug: "building-new-era-measurement",
     title: "Together, Building a New Era of Marketing Measurement",
+    metaTitle: "New Era of Measurement",
+    description:
+      "Why IIM exists, who is building it, and how a community of marketers and researchers is replacing attribution with impact-based measurement.",
     date: "February 1, 2023",
     dateIso: "2023-02-01",
     category: "BLOG",

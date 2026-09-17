@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import Script from "next/script";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const GA_MEASUREMENT_ID = "G-J6N65EZ59Z";
@@ -20,6 +21,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Integrated Impact Modeling (IIM)",
     template: "%s | Integrated Impact Modeling",

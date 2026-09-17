@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Resources",
   description:
     "Articles, references, and knowledge for marketing leaders, researchers, and measurement practitioners.",
+  alternates: { canonical: "/resources" },
 };
 
 function PostCard({
