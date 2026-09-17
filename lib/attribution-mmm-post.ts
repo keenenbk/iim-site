@@ -1,8 +1,8 @@
 export const attributionMmmPost = {
-  slug: "attribution-mmm-incrementality-different-answers",
+  slug: "attribution-vs-mmm",
   title:
     "Why Attribution, Marketing Mix Modeling and Incrementality Produce Different Answers",
-  metaTitle: "Attribution vs MMM vs Incrementality: Why Results Disagree",
+  metaTitle: "Attribution vs MMM",
   description:
     "Attribution, marketing mix modeling and incrementality often produce different estimates of marketing impact. This article explains why, what each method measures, and how their results can be reconciled.",
   excerpt:

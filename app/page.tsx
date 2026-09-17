@@ -4,9 +4,12 @@ import { Container } from "@/components/container";
 import { SubscribeNewsletterForm } from "@/components/subscribe-newsletter-form";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: {
+    absolute: "Integrated Impact Modeling (IIM)",
+  },
   description:
     "Integrated Impact Modeling (IIM)—a holistic, science-based approach to marketing measurement and optimization.",
+  alternates: { canonical: "/" },
 };
 
 const BEEHIIV = "https://integratedimpactmarketing.beehiiv.com/";

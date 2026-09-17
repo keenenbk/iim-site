@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "IIM in Practice",
   description:
     "How IIM translates complex analytics into practical marketing methodologies for real-world decisions.",
+  alternates: { canonical: "/in-practice" },
 };
 
 export default function InPracticePage() {
@@ -17,10 +18,10 @@ export default function InPracticePage() {
             <p className="text-xs font-bold uppercase tracking-[0.22em] text-body">
               Practice
             </p>
-            <blockquote className="mt-5 font-serif text-3xl font-bold leading-snug text-headline sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
+            <h1 className="mt-5 font-serif text-3xl font-bold leading-snug text-headline sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
               How can I see the full picture and identify my most impactful
               channels beyond attribution?
-            </blockquote>
+            </h1>
             <p className="mt-10 text-xl font-semibold leading-relaxed text-navy sm:text-2xl sm:leading-snug">
               Whether you need big-picture clarity or technical depth, IIM
               translates complex analytics into practical marketing methodologies

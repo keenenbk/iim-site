@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Privacy notice",
   description:
     "How Integrated Impact Modeling collects and uses email addresses for the IIM newsletter, including consent, Beehiiv processing, and your rights under UK GDPR, EU GDPR, and US email law.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

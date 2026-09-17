@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "IIM Methodology",
   description:
     "How Integrated Impact Modeling blends scientific rigor with practical marketing intelligence.",
+  alternates: { canonical: "/methodology" },
 };
 
 const whitePaperSections = [
