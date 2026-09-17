@@ -44,9 +44,15 @@ export function SiteFooter() {
             <NewsletterForm />
           </div>
         </div>
-        <p className="mt-20 border-t border-hairline pt-10 text-base text-body">
-          Copyright © 2025 Integrated Impact Modeling (IIM).
-        </p>
+        <div className="mt-20 flex flex-col gap-4 border-t border-hairline pt-10 text-base text-body sm:flex-row sm:items-center sm:justify-between">
+          <p>Copyright © 2025 Integrated Impact Modeling (IIM).</p>
+          <Link
+            href="/privacy"
+            className="font-semibold text-navy underline decoration-navy/25 underline-offset-4 transition-colors hover:decoration-navy"
+          >
+            Privacy notice
+          </Link>
+        </div>
       </div>
     </footer>
   );
